@@ -171,6 +171,7 @@
 
     <build>
         <plugins>
+            <!-- Asciidoctor: генерация HTML-версии документации -->
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
@@ -183,19 +184,33 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
+                            <!-- .adoc лежат здесь -->
                             <sourceDirectory>${project.basedir}/src/docs/modules</sourceDirectory>
+                            <!-- результирующие HTML + ресурсы пойдут в docs/ -->
                             <outputDirectory>${project.basedir}/docs</outputDirectory>
                             <backend>html5</backend>
+
+                            <!--  из src/docs копируем папки images и diagrams -->
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/src/docs</directory>
+                                    <includes>
+                                        <include>images/**</include>
+                                        <include>diagrams/**</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+
                             <attributes>
                                 <toc>left</toc>
                                 <toclevels>3</toclevels>
+                                <!-- пусть HTML делает <img src="images/…"> -->
+                                <imagesdir>images</imagesdir>
                             </attributes>
                         </configuration>
-
                     </execution>
                 </executions>
             </plugin>
-
 
 
             <plugin>
