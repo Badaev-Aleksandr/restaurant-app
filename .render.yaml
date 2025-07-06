@@ -15,4 +15,4 @@ services:
       - key: SPRING_DATASOURCE_USERNAME
         value: restaurant_user
       - key: SPRING_DATASOURCE_PASSWORD
-        value: 1111
+        value: nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh
