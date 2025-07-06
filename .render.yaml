@@ -4,6 +4,9 @@ services:
     plan: free
     environment: docker
     dockerfilePath: ./Dockerfile
+    envVars:
+      - fromDatabase:
+          name: restaurantdb
 #    envVars:
 #      - key: DB_HOST
 #        value: dpg-d1l8d1qdbo4c739nctq0-a.render.com
