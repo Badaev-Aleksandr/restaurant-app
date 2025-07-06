@@ -5,8 +5,7 @@ skinparam sequenceArrowThickness 2
 Client -> CrudRepository: count()
 CrudRepository --> Client: return
 
-@enduml
- ListCrudRepository: saveAll()
+Client -> ListCrudRepository: saveAll()
 ListCrudRepository --> Client: return
 
 Client -> CrudRepository: deleteAll()
