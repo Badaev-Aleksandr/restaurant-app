@@ -6,7 +6,7 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: DATABASE_URL
-        value: postgresql://restaurant_user:nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh@dpg-d1l8d1qdbo4c739nctq0-a/restaurantdb_gu3s
+        value: jdbc:postgresql://restaurant_user:nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh@dpg-d1l8d1qdbo4c739nctq0-a.render.com:5432/restaurantdb_gu3s
 #    envVars:
 #      - key: DB_HOST
 #        value: dpg-d1l8d1qdbo4c739nctq0-a.render.com
