@@ -4,14 +4,14 @@ services:
     plan: free
     environment: docker
     dockerfilePath: ./Dockerfile
-    envVars:
-      - key: DB_HOST
-        value: dpg-d1l8d1qdbo4c739nctq0-a.render.com
-      - key: DB_PORT
-        value: 5432
-      - key: DATASOURCE_BASE
-        value: restaurantdb_gu3s
-      - key: DATABASE_USER
-        value: restaurant_user
-      - key: DATABASE_PASSWORD
-        value: nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh
+#    envVars:
+#      - key: DB_HOST
+#        value: dpg-d1l8d1qdbo4c739nctq0-a.render.com
+#      - key: DB_PORT
+#        value: 5432
+#      - key: DATASOURCE_BASE
+#        value: restaurantdb_gu3s
+#      - key: DATABASE_USER
+#        value: restaurant_user
+#      - key: DATABASE_PASSWORD
+#        value: nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh
