@@ -6,7 +6,7 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - fromDatabase:
-          name: restaurantdb
+          name: restaurantdb_gu3s
 #    envVars:
 #      - key: DB_HOST
 #        value: dpg-d1l8d1qdbo4c739nctq0-a.render.com
