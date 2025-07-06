@@ -5,10 +5,8 @@ services:
     environment: docker
     dockerfilePath: ./Dockerfile
     envVars:
-      - key: SPRING_PROFILES_ACTIVE
-        value: prod
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:postgresql://restaurant_user:nEAnbVr5ossn8yNxN9ClYCk2vHrlPlmh@dpg-d1l8d1qdbo4c739nctq0-a/restaurantdb_gu3s
+        value: jdbc:postgresql://dpg-d1l8d1qdbo4c739nctq0-a.render.com/restaurantdb_gu3s
       - key: SPRING_DATASOURCE_USERNAME
         value: restaurant_user
       - key: SPRING_DATASOURCE_PASSWORD
